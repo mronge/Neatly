@@ -158,7 +158,7 @@ struct SettingsView: View {
                 } else {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundStyle(.red)
-                    Text("Missing — reinstall Clearly")
+                    Text("Missing — reinstall Neatly")
                         .foregroundStyle(.secondary)
                 }
             }
@@ -261,7 +261,7 @@ struct SettingsView: View {
                 .font(.caption)
                 .foregroundStyle(.tertiary)
         case .installedLegacy:
-            Text("This copy was installed by an older version of Clearly. It will keep working — we'll leave it alone.")
+            Text("This copy was installed by an older version of Neatly. It will keep working — we'll leave it alone.")
                 .font(.caption)
                 .foregroundStyle(.tertiary)
         case .installedElsewhere, .notInstalled:
@@ -429,7 +429,7 @@ struct SettingsView: View {
                     .frame(width: 80, height: 80)
             }
 
-            Text("Clearly")
+            Text("Neatly")
                 .font(.system(size: 24, weight: .semibold))
 
             Text("Version \(appVersion)")
@@ -454,7 +454,7 @@ struct SettingsView: View {
                 .buttonStyle(.bordered)
 
                 Button("GitHub") {
-                    NSWorkspace.shared.open(URL(string: "https://github.com/Shpigford/clearly")!)
+                    NSWorkspace.shared.open(URL(string: "https://github.com/mronge/Neatly")!)
                 }
                 .buttonStyle(.bordered)
 

@@ -44,7 +44,7 @@
 - Chat panel works in every vault now — no longer limited to LLM Wikis. A vault picker in the chat toolbar makes the active vault explicit for multi-vault users.
 - Smarter chat retrieval finds notes by title and section even when the question doesn't quote the exact words (e.g. "summarize my writing on local-first software" now matches the note literally named that).
 - Chat citations show the heading path so you can see which section answered.
-- Drop a new note into an LLM Wiki and Clearly proposes where to file it and which related notes should link to it — same diff-sheet review as Capture and Review. Notes are never moved from where you dropped them.
+- Drop a new note into an LLM Wiki and Neatly proposes where to file it and which related notes should link to it — same diff-sheet review as Capture and Review. Notes are never moved from where you dropped them.
 
 ## [2.7.0] - 2026-04-27
 - New experimental live preview editor — WYSIWYG-style markdown editing
@@ -95,7 +95,7 @@
 - File → Open Recent lists recently opened documents
 - Window title shows the active document name, with a dot when unsaved
 - Sync Settings labels vault locations by capability (iCloud, Desktop & Documents, local-only)
-- Minimum macOS raised to Sequoia 15 so Clearly picks up Liquid Glass on macOS 26 automatically
+- Minimum macOS raised to Sequoia 15 so Neatly picks up Liquid Glass on macOS 26 automatically
 
 ## [2.3.0] - 2026-04-20
 - `clearly` command-line tool shipped — install from Settings → Command Line for terminal and MCP-client access to your vault

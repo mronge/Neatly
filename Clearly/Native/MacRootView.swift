@@ -104,7 +104,7 @@ struct MacRootView: View {
     private var windowTitle: String {
         guard let docID = workspace.activeDocumentID,
               let doc = workspace.openDocuments.first(where: { $0.id == docID }) else {
-            return "Clearly"
+            return "Neatly"
         }
         return workspace.isDirty ? "\u{2022} \(doc.displayName)" : doc.displayName
     }

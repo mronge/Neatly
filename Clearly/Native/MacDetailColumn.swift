@@ -559,7 +559,7 @@ struct MacDetailColumn: View {
     private var documentTitle: String {
         guard let docID = workspace.activeDocumentID,
               let doc = workspace.openDocuments.first(where: { $0.id == docID }) else {
-            return "Clearly"
+            return "Neatly"
         }
         let base = doc.displayName
         return workspace.isDirty ? "\u{2022} \(base)" : base

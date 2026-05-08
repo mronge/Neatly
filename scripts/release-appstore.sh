@@ -122,7 +122,7 @@ extract_changelog_markdown() {
   echo "$md"
 }
 
-echo "🍎 Building Clearly v$VERSION (build $BUILD_NUMBER) for App Store..."
+echo "🍎 Building Neatly v$VERSION (build $BUILD_NUMBER) for App Store..."
 
 # Clean build
 rm -rf build
@@ -187,7 +187,7 @@ echo "✅ Archive clean — no Sparkle framework."
 # step uses destination=upload and uploads directly to ASC without leaving a
 # local .app behind, so we validate the archive (which is what gets signed
 # and shipped).
-scripts/verify-entitlements.sh build/Clearly-AppStore.xcarchive/Products/Applications/Clearly.app
+scripts/verify-entitlements.sh build/Clearly-AppStore.xcarchive/Products/Applications/Neatly.app
 
 echo "🚀 Uploading to App Store Connect..."
 sed "s/\${APPLE_TEAM_ID}/$TEAM_ID/g" ExportOptions-AppStore.plist > build/ExportOptions-AppStore.plist
@@ -202,7 +202,7 @@ echo "🔄 Restoring Sparkle project..."
 mv build/Info-Original.plist Clearly/Info.plist
 xcodegen generate
 
-echo "✅ Uploaded Clearly v$VERSION (build $BUILD_NUMBER) to App Store Connect."
+echo "✅ Uploaded Neatly v$VERSION (build $BUILD_NUMBER) to App Store Connect."
 
 # ── 7. Submit to App Review via App Store Connect API ────────────────────────
 echo "📡 Submitting to App Review..."
@@ -392,5 +392,5 @@ asc_api PATCH "/reviewSubmissions/$REVIEW_SUBMISSION_ID" "{
   }
 }" > /dev/null
 
-echo "✅ Clearly v$VERSION submitted for App Review!"
+echo "✅ Neatly v$VERSION submitted for App Review!"
 echo "   Track status at: https://appstoreconnect.apple.com"

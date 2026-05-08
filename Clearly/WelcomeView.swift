@@ -14,7 +14,7 @@ struct WelcomeView: View {
                     .frame(width: 64, height: 64)
                     .padding(.bottom, 16)
 
-                Text("Welcome to Clearly")
+                Text("Welcome to Neatly")
                     .font(.system(size: 26, weight: .semibold))
                     .foregroundStyle(.primary)
                     .tracking(-0.3)
@@ -29,7 +29,7 @@ struct WelcomeView: View {
                     WelcomePathCard(
                         icon: "folder.badge.plus",
                         title: "Add a Folder",
-                        description: "Point Clearly at a folder of markdown files to unlock the sidebar, backlinks, tags, and search.",
+                        description: "Point Neatly at a folder of markdown files to unlock the sidebar, backlinks, tags, and search.",
                         isPrimary: true,
                         colorScheme: colorScheme
                     ) {

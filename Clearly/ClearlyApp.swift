@@ -951,7 +951,7 @@ struct ClearlyApp: App {
     }
 
     var body: some Scene {
-        Window("Clearly", id: "main") {
+        Window("Neatly", id: "main") {
             MacRootView(workspace: workspace)
                 .preferredColorScheme(resolvedColorScheme)
         }
@@ -1031,8 +1031,8 @@ struct ClearlyApp: App {
                 ChatCommands(workspace: workspace)
             }
             CommandGroup(replacing: .help) {
-                Button("Clearly Help") {
-                    NSWorkspace.shared.open(URL(string: "https://github.com/Shpigford/clearly/issues")!)
+                Button("Neatly Help") {
+                    NSWorkspace.shared.open(URL(string: "https://github.com/mronge/Neatly/issues")!)
                 }
                 Button("Report a Bug…") {
                     let version = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "?"
@@ -1060,7 +1060,7 @@ struct ClearlyApp: App {
                         let logText = try DiagnosticLog.exportRecentLogs()
                         let panel = NSSavePanel()
                         panel.allowedContentTypes = [.plainText]
-                        panel.nameFieldStringValue = "Clearly-Diagnostic-Log.txt"
+                        panel.nameFieldStringValue = "Neatly-Diagnostic-Log.txt"
                         guard panel.runModal() == .OK, let url = panel.url else { return }
                         try logText.write(to: url, atomically: true, encoding: .utf8)
                     } catch {

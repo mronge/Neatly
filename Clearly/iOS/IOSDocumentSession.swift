@@ -62,7 +62,7 @@ public final class IOSDocumentSession {
             }
             guard Limits.isOpenableSize(file.url) else {
                 let limitMB = Limits.maxOpenableFileSize / 1_000_000
-                errorMessage = "“\(file.url.lastPathComponent)” is larger than \(limitMB) MB. Clearly can't open files this large safely."
+                errorMessage = "“\(file.url.lastPathComponent)” is larger than \(limitMB) MB. Neatly can't open files this large safely."
                 isLoading = false
                 return
             }

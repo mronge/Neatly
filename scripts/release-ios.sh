@@ -29,7 +29,7 @@ VERSION="${1:?Usage: ./scripts/release-ios.sh <version>}"
 TEAM_ID="${APPLE_TEAM_ID:?Set APPLE_TEAM_ID in .env}"
 BUILD_NUMBER=$(date +%Y%m%d%H%M)
 
-echo "📱 Building Clearly iOS v$VERSION (build $BUILD_NUMBER) for TestFlight..."
+echo "📱 Building Neatly iOS v$VERSION (build $BUILD_NUMBER) for TestFlight..."
 
 # Clean build
 rm -rf build/Clearly-iOS.xcarchive build/export-ios
@@ -39,7 +39,7 @@ mkdir -p build
 xcodegen generate
 
 # ── 2. Archive ───────────────────────────────────────────────────────────────
-echo "📦 Archiving Clearly-iOS..."
+echo "📦 Archiving Neatly iOS..."
 xcodebuild -project Clearly.xcodeproj \
   -scheme Clearly-iOS \
   -configuration Release \
@@ -61,7 +61,7 @@ xcodebuild -exportArchive \
   -allowProvisioningUpdates
 
 echo ""
-echo "✅ Clearly iOS v$VERSION (build $BUILD_NUMBER) uploaded."
+echo "✅ Neatly iOS v$VERSION (build $BUILD_NUMBER) uploaded."
 
 # ── 4. Tag and push ──────────────────────────────────────────────────────────
 TAG="ios-v$VERSION"

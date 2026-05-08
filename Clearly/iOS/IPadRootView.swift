@@ -85,7 +85,7 @@ struct IPadRootView: View {
             Button("Delete", role: .destructive) { commitDelete() }
             Button("Cancel", role: .cancel) { deleteTarget = nil }
         } message: {
-            Text("This can't be undone from within Clearly.")
+            Text("This can't be undone from within Neatly.")
         }
         .confirmationDialog(
             folderDeleteTarget.map { "Delete \u{201C}\($0.lastPathComponent)\u{201D}?" } ?? "",
@@ -95,7 +95,7 @@ struct IPadRootView: View {
             Button("Delete", role: .destructive) { commitFolderDelete() }
             Button("Cancel", role: .cancel) { folderDeleteTarget = nil }
         } message: {
-            Text("This deletes the folder and everything inside it. This can't be undone from within Clearly.")
+            Text("This deletes the folder and everything inside it. This can't be undone from within Neatly.")
         }
         .alert("New Folder", isPresented: $isCreatingFolder) {
             TextField("Name", text: $newFolderDraft)

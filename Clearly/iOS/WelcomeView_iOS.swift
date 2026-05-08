@@ -82,7 +82,7 @@ struct WelcomeView_iOS: View {
         ContentUnavailableView {
             Label("Your vault folder couldn't be found", systemImage: "folder.badge.questionmark")
         } description: {
-            Text("Clearly lost access to the folder you picked. It may have been renamed, moved, or removed. Choose your vault again to continue.")
+            Text("Neatly lost access to the folder you picked. It may have been renamed, moved, or removed. Choose your vault again to continue.")
         } actions: {
             Button {
                 pickerMode = .pickedICloud
@@ -102,7 +102,7 @@ struct WelcomeView_iOS: View {
         VStack(spacing: 20) {
             appIcon
             VStack(spacing: 8) {
-                Text("Welcome to Clearly")
+                Text("Welcome to Neatly")
                     .font(.largeTitle.weight(.bold))
                     .tracking(-0.4)
                     .multilineTextAlignment(.center)

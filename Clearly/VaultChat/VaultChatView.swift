@@ -264,7 +264,7 @@ private struct VaultChatBubble: View {
     }
 
     private var roleLabel: some View {
-        Text(message.role == .user ? "You" : "Clearly")
+        Text(message.role == .user ? "You" : "Neatly")
             .font(.caption2)
             .fontWeight(.semibold)
             .foregroundStyle(.secondary)

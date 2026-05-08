@@ -2681,7 +2681,7 @@ final class WorkspaceManager {
         let alert = NSAlert()
         alert.alertStyle = .warning
         alert.messageText = "“\(url.lastPathComponent)” is too large to open."
-        alert.informativeText = "Clearly limits markdown files to \(limitMB) MB. Files larger than this are typically logs or pasted dumps and can crash the editor. Open a smaller file or split this one."
+        alert.informativeText = "Neatly limits markdown files to \(limitMB) MB. Files larger than this are typically logs or pasted dumps and can crash the editor. Open a smaller file or split this one."
         alert.addButton(withTitle: "OK")
         alert.runModal()
     }
